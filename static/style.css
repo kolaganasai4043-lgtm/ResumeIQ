@@ -1,0 +1,148 @@
+•⁠  ⁠{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.header h1 span { color: #6c63ff; }
+
+.header p {
+    color: #888;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.upload-box {
+    background: #1a1a2e;
+    border: 2px dashed #6c63ff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.upload-box h2 {
+    margin-bottom: 24px;
+    font-size: 22px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px;
+    background: #0f0f1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    padding: 14px;
+    background: #0f0f1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+button {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover { background: #5a52d5; transform: translateY(-2px); }
+
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #6c63ff;
+}
+
+.results {
+    margin-top: 30px;
+    background: #1a1a2e;
+    border-radius: 20px;
+    padding: 30px;
+    display: none;
+}
+
+.match-score {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 800;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.match-label {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.section { margin-bottom: 24px; }
+
+.section h3 {
+    color: #6c63ff;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #6c63ff22;
+    border: 1px solid #6c63ff;
+    color: #a89fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 14px;
+}
+
+.missing-tag {
+    display: inline-block;
+    background: #ff626222;
+    border: 1px solid #ff6262;
+    color: #ff9999;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 14px;
+}

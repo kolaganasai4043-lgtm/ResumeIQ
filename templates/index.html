@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeIQ — AI Resume Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Resume<span>IQ</span></h1>
+        <p>AI-Powered Resume Analyzer & Job Match System</p>
+    </div>
+
+    <div class="upload-box">
+        <h2>📄 Upload Your Resume</h2>
+        <input type="file" id="resumeFile" accept=".pdf" />
+        <select id="jobRole">
+            <option value="data scientist">Data Scientist</option>
+            <option value="web developer">Web Developer</option>
+            <option value="python developer">Python Developer</option>
+            <option value="ml engineer">ML Engineer</option>
+        </select>
+        <button onclick="analyzeResume()">🔍 Analyze Resume</button>
+    </div>
+
+    <div class="loading" id="loading">
+        <p>⏳ Analyzing your resume...</p>
+    </div>
+
+    <div class="results" id="results"></div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
