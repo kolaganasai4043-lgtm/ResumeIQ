@@ -1,0 +1,7 @@
+venv/
+_pycache_/
+uploads/*.pdf
+*.pyc
+.DS_Store
+*.pyc
+.env
