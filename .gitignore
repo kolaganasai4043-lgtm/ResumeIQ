@@ -3,5 +3,4 @@ _pycache_/
 uploads/*.pdf
 *.pyc
 .DS_Store
-*.pyc
 .env
