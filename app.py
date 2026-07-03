@@ -17,10 +17,14 @@ def analyze():
             return jsonify({"error": "No file uploaded"})
 
         file = request.files['resume']
-        job_role = request.form.get('job_role', 'python developer')
 
         if file.filename == '':
             return jsonify({"error": "No file selected"})
+
+        if not file.filename.lower().endswith('.pdf'):
+            return jsonify({"error": "Only PDF files are supported. Please upload a .pdf file."})
+
+        job_role = request.form.get('job_role', 'python developer')
 
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filepath)

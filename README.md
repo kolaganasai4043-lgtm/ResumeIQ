@@ -26,6 +26,7 @@ ResumeIQ is a web application that analyzes PDF resumes using NLP and Machine Le
 1.⁠ ⁠pip install -r requirements.txt
 
 2.⁠ ⁠python3 app.py
+
 ## 📸 Screenshots
 
 ### Upload & Analyze
